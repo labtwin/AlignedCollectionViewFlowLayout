@@ -1,8 +1,9 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
     name: "AlignedCollectionViewFlowLayout",
+    platforms: [.iOS(.v9)],
     products: [
         .library(name: "AlignedCollectionViewFlowLayout", targets: ["AlignedCollectionViewFlowLayout"])
     ],
@@ -11,5 +12,6 @@ let package = Package(
             name: "AlignedCollectionViewFlowLayout",
             path: "AlignedCollectionViewFlowLayout"
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
